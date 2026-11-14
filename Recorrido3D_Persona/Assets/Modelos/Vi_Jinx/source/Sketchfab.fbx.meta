@@ -3,7 +3,67 @@ guid: cb9c1b81e3159cd4c8a5c84dbac5d483
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_CLothTop
+    second: {fileID: 2100000, guid: 5dc3663f3d97d1d45b2717caf894062a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_ClothBot
+    second: {fileID: 2100000, guid: 82e1ae2c63845e143b0385e86e78742b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_DetailCloths.001
+    second: {fileID: 2100000, guid: 0f7a801d105570347994ef8c525138f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Gloves
+    second: {fileID: 2100000, guid: 1bf3aa8b40535fb4c9490658bfd8bc9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Hair
+    second: {fileID: 2100000, guid: 13edc35a5111bd34ebbb5c4702c1ee60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_SkinAndDetails
+    second: {fileID: 2100000, guid: d44e19cf26311cd478b116cb464bbba0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Weapons.001
+    second: {fileID: 2100000, guid: 0aacb902c4b696e45b6e4844ff4bdec5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_cloth.001
+    second: {fileID: 2100000, guid: 27814eb7641019b408f750e2199920a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_hair.001
+    second: {fileID: 2100000, guid: b33e00dc9b0813d4aa4a6dd5e182788d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_skin.001
+    second: {fileID: 2100000, guid: fb71ebd581c4eb840aa2f7f1f1e2ca6d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.013
+    second: {fileID: 2100000, guid: 348791a1fa7279c4a9ea6a3ac5865fe4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Symbol
+    second: {fileID: 2100000, guid: 998341e290de1e14f85d7cfe896e326b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
