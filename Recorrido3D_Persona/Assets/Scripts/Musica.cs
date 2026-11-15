@@ -38,10 +38,6 @@ public class MusicaRocola3D : MonoBehaviour
         audioSource.maxDistance = distanciaMaxima;
         audioSource.loop = true;
 
-        if (!audioSource.isPlaying && audioSource.clip != null)
-        {
-            audioSource.Play();
-        }
     }
 
     void Update()
