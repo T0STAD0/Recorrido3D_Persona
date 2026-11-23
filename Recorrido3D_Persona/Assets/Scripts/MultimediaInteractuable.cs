@@ -21,7 +21,11 @@ public class MultimediaInteractuable : MonoBehaviour
     public VideoPlayer reproductorVideo;
     public RenderTexture texturaVideo;
 
+    [Header("Audio a silenciar al reproducir video")]
+    public RocolaInteractiva rocola;   // Arrastra aquí el objeto que tiene el script de la rocola
+
     private bool abierto = false;
+    private bool rocolaPausadaPorVideo = false; // true solo si este script fue quien la apagó
 
     void Update()
     {
@@ -61,6 +65,13 @@ public class MultimediaInteractuable : MonoBehaviour
         }
         else if (tipo == TipoContenido.Video && reproductorVideo != null)
         {
+            // Detiene la música del vinyl para que no se encime con el audio del video
+            if (rocola != null && rocola.EstaReproduciendo)
+            {
+                rocola.DetenerRocola();
+                rocolaPausadaPorVideo = true;
+            }
+
             reproductorVideo.clip = videoMostrar;
             visorMultimedia.texture = texturaVideo;
             reproductorVideo.Play();
@@ -78,6 +89,11 @@ public class MultimediaInteractuable : MonoBehaviour
         if (panelMultimedia != null)
             panelMultimedia.SetActive(false);
 
+        // Reanuda la música solo si el video fue quien la detuvo
+        if (rocolaPausadaPorVideo && rocola != null)
+            rocola.ReanudarRocola();
+
+        rocolaPausadaPorVideo = false;
         abierto = false;
     }
 }

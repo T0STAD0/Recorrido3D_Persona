@@ -72,4 +72,27 @@ public class RocolaInteractiva : MonoBehaviour
             audioSource.Pause(); // Pausa la canción (usa .Stop() si quieres que reinicie desde 0)
         }
     }
+
+    // Permite a otros scripts saber si la rocola está encendida
+    public bool EstaReproduciendo => estaReproduciendo;
+
+    // Apaga la rocola sin alternar su estado (la usan otros scripts, ej. MultimediaInteractuable)
+    public void DetenerRocola()
+    {
+        if (!estaReproduciendo) return;
+
+        estaReproduciendo = false;
+        audioSource.Pause(); // Pausa (no reinicia), para poder reanudar donde se quedó
+    }
+
+    // Enciende la rocola de nuevo, continuando la canción donde se pausó
+    public void ReanudarRocola()
+    {
+        if (estaReproduciendo) return;
+
+        estaReproduciendo = true;
+        if (!audioSource.isPlaying) audioSource.Play();
+    }
 }
+
+ 
