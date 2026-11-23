@@ -1733,8 +1733,67 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8f7a3b3acdda85e469e8cf192f41c155, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 808067269}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8f7a3b3acdda85e469e8cf192f41c155, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 808067268}
   m_SourcePrefab: {fileID: 100100000, guid: 8f7a3b3acdda85e469e8cf192f41c155, type: 3}
+--- !u!1 &808067267 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8f7a3b3acdda85e469e8cf192f41c155, type: 3}
+  m_PrefabInstance: {fileID: 808067266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &808067268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808067267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34ffaf15c7d02e149908cb592b7f41cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titulo: Vi y Jinx
+  descripcion: "Signed es cientifico que realizo experimentos horribles con tal de
+    busacr la cura para su hija.\nEn el proceso convirti\xF3 al padre de Jinx y Vi
+    en un mounstruo."
+  panelInfoUI: {fileID: 0}
+  textoTituloUI: {fileID: 0}
+  textoDescripcionUI: {fileID: 0}
+--- !u!114 &808067269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808067267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38b3e0f62e4f34843ae93835843fa373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreObjeto: Objeto
+  descripcion: Presiona E para interactuar
+  alInteractuar:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 808067268}
+        m_TargetAssemblyTypeName: InfoModeloClick, Assembly-CSharp
+        m_MethodName: AlternarInformacion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1831,8 +1890,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   titulo: Vi y Jinx
-  descripcion: "Esto es un texto de prueba para asegurar como se ve el texto ya en
-    la interacci\xF3n"
+  descripcion: 'Este es un recorrido de algunos momentos memorables de la serie de
+    Arcane.
+
+    Comenzando vemos a ambas hermanas, Vi y Jinx.'
   panelInfoUI: {fileID: 500707547}
   textoTituloUI: {fileID: 539810257}
   textoDescripcionUI: {fileID: 2069624852}
